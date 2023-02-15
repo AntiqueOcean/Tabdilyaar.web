@@ -133,10 +133,10 @@ setInterval(loop, 250);
 {     
     if (lastTheme != null)
     {
-        if (lastTheme === 'light')
+        if (lastTheme === 'dark')
             switchTheme();   
     } else {
-        localStorage.setItem('theme', 'dark');
+        localStorage.setItem('theme', 'light');
     }
 
     if (lastFontSize != null)
