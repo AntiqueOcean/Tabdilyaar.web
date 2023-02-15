@@ -2,24 +2,31 @@ body {
     background-color: var(--color1);
     align-items: center;
     font-family: shabnam;
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
+
 }
 .leftside {
-    display: flex;
-    width: 128px;
-    height: auto;
-    flex-grow: 0;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 220px;
+    height: 100vh;
+    z-index: 1;
 }
 .rightside {
-    display: flex;
-    width: 128px;
-    height: auto;
-    flex-grow: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    z-index: 1;
+}
+.bottom {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto 0 auto;
+    background-color: red;
 }
 
 .main-content {
@@ -209,7 +216,7 @@ body {
     max-width: 600px;
     padding: 0px 32px 0px 32px;
     box-sizing: border-box;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 90px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;

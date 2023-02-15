@@ -147,7 +147,5 @@ setInterval(loop, 250);
     if (localStorage.getItem("isTabdilyaarFirstTime") === null) {
         localStorage.setItem("isTabdilyaarFirstTime", "false");
         alert (alertMessage);
-        if (isAndroid)
-            NativeAndroid.showAndroidMessage("توجه!", alertMessage, "فهمیدم");
     }
 }

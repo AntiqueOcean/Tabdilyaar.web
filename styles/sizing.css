@@ -1,19 +1,25 @@
 @media only screen 
-and (max-width : 600px) {
+and (max-width : 1019px) {
     .leftside {
         display: none;
     }
     .rightside {
         display: none;
+    }
+    .bottom {
+        display: fixed;
     }
 }
 
 @media only screen 
-and (min-width : 481px) {
+and (min-width : 1020px) {
     .leftside {
-        display: flex;
+        display: fixed;
     }
     .rightside {
-        display: flex;
+        display: fixed;
+    }
+    .bottom {
+        display: none;
     }
 }
