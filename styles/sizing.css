@@ -1,0 +1,19 @@
+@media only screen 
+and (max-width : 600px) {
+    .leftside {
+        display: none;
+    }
+    .rightside {
+        display: none;
+    }
+}
+
+@media only screen 
+and (min-width : 481px) {
+    .leftside {
+        display: flex;
+    }
+    .rightside {
+        display: flex;
+    }
+}

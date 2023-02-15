@@ -1,0 +1,61 @@
+.dark-theme {
+    --color0: #BEBEBE; /*title color*/
+    --color0-2: #D8D8D8; /*title color shaded*/
+    --color1: #303030; /*main bg*/
+    --color2: #0C0C0C;  /*input field bg*/
+    --color3: #7F7F7F; /*input field border, seperator color*/
+    --color3-2: #C8C8C8; /*input field border active*/
+    --color4: #161616; /*result field bg, list bg*/
+    --color4-2: #202020; /*result field bg active*/
+    --color5: #DCDCDC; /*input font color*/
+    --color6: #DCDCDC; /*result font color*/  
+    --color7: #7F7F7F; /*result button color*/
+    --color8: rgb(0 0 0 / 0.2); /*result shadow color*/
+    --color9: RGB(0, 220, 200); /*save font color*/
+    --color10: RGB(110, 24, 60); /*remove color*/
+}
+
+.light-theme {
+    --color0: RGB(90, 90, 90); /*title color*/
+    --color0-2: RGB(12, 12, 12); /*title color shaded*/
+    --color1: RGB(240, 240, 240); /*main bg*/
+    --color2: RGB(255, 255, 255);  /*input field bg*/
+    --color3: RGB(192, 192, 192); /*input field border, seperator color*/
+    --color3-2: RGB(24, 24, 24); /*input field border active*/
+    --color4: RGB(255, 255, 255); /*result field bg, list bg*/
+    --color4-2: RGB(246, 246, 246); /*result field bg active*/
+    --color5: RGB(64, 64, 64); /*input font color*/
+    --color6: RGB(12, 12, 12); /*result font color*/  
+    --color7: RGB(140, 140, 140); /*result button color*/
+    --color8: rgb(240 240 240 / 0); /*result shadow color*/
+    --color9: RGB(0, 170, 80); /*save font color*/
+    --color10: RGB(110, 24, 60); /*remove color*/
+}
+
+.font-size-small {
+    --font-small: 14px;
+    --font-medium: 16px;
+    --font-big: 18px;
+    --font-huge: 20px;
+}
+
+.font-size-medium {
+    --font-small: 16px;
+    --font-medium: 18px;
+    --font-big: 20px;
+    --font-huge: 22px;
+}
+
+.font-size-big {
+    --font-small: 18px;
+    --font-medium: 20px;
+    --font-big: 22px;
+    --font-huge: 24px;
+}
+
+.font-size-huge {
+    --font-small: 20px;
+    --font-medium: 22px;
+    --font-big: 24px;
+    --font-huge: 26px;
+}

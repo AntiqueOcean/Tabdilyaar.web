@@ -1,0 +1,12 @@
+@import "reset.css";
+@import "themes.css";
+@import "style.css";
+@import "fontset.css";
+@import "sizing.css";
+
+html {
+    font-family: "shabnam" !important;
+    direction: rtl;
+}
+
+

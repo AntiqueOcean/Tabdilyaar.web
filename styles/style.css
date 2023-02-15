@@ -1,0 +1,336 @@
+body {
+    background-color: var(--color1);
+    align-items: center;
+    font-family: shabnam;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.leftside {
+    display: flex;
+    width: 128px;
+    height: auto;
+    flex-grow: 0;
+}
+.rightside {
+    display: flex;
+    width: 128px;
+    height: auto;
+    flex-grow: 0;
+}
+
+.main-content {
+    height: auto;
+    max-width: 600px;;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    padding: 40px 32px 0px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    position: sticky;
+    flex-grow: 1;
+    top: 0;
+    background-color: var(--color1);
+}
+
+.title {
+    font-size: var(--font-huge);
+    width: 100%;
+    height: auto;
+    color: var(--color0);
+    text-align: center;
+}
+
+.input-field {
+    content: "input";
+    background-color: var(--color2);
+    border: 1px solid var(--color3);
+    border-radius: 12px;
+    text-align: right;
+    height: auto;
+    width: 100%;
+    padding: 16px;
+    color: var(--color5);
+    box-sizing: content-box;
+    font-family: shabnam;
+    font-size: var(--font-small);
+    transition-duration: 0.33s;
+    margin: 32px 0 0 0;
+}
+
+.input-field:focus {
+    content: "";
+    border-radius: 4px;
+    border-color: var(--color3-2);
+    outline: none;
+    margin: 24px 0 0 0;
+    padding: 24px 16px 24px 16px;
+    font-size: var(--font-medium);
+}
+
+.arrow {
+    border: solid var(--color3);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.arrow-down {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 12px 0px 12px 0px;
+}
+
+.result {
+    background-color: var(--color4);
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-shadow: 0px 0px 8px 8px var(--color8);
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: var(--font-small);
+    transition-duration: 0.2s;
+    align-items: center;
+}
+
+.result a {
+    flex-grow: 1;
+    color: var(--color6);
+    font-size: var(--font-medium);
+    text-align: right;
+    direction: rtl;
+    font-family: shabnam;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.result a+a {
+    width: auto;
+    flex-grow: 0;
+    color: var(--color7);
+    font-size: var(--font-small);
+    text-align: center;
+    padding: 4px 12px 4px 12px;
+    box-sizing: border-box;
+
+}
+
+.result:active a+a::after {
+    content: ' شد';
+
+}
+
+.result:active {
+    background-color: var(--color4-2);
+}
+
+.result:active a+a{
+    color: var(--color6);
+    background-color: var(--color4);
+    border-radius: 8px;
+
+}
+
+.result-bottom-box {
+    width: 100%;
+    padding: 16px 0 16px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    align-items: center;
+    user-select: none;
+}
+
+.result-bottom-box > a {
+    flex-grow: 1;
+    text-align: right;
+    font-size: var(--font-small);
+    color: var(--color0);
+}
+
+.result-bottom-box > button {
+    border-radius: 12px;
+    background-color: var(--color4);
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    font-size: var(--font-small);
+    font-family: shabnam;
+    color: var(--color7);
+    flex-grow: 0;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    outline: none;
+    transition-duration: 0.2s;
+}
+
+.result-bottom-box>button:active{
+    color: green;
+    padding: 8px 24px 8px 24px;
+
+}
+
+.seperator {
+    margin: 0 0 8px 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color3);
+}
+
+.list-title {
+    background-color: var(--color4);
+    width: 100%;
+    height: auto;
+    padding: 12px 24px 12px 24px;
+
+    font-size: var(--font-small);
+    border-radius: 12px;
+    color: var(--color7);
+    text-align: right;
+    margin: 8px 0 16px 0;
+}
+
+.list-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 0px 32px 0px 32px;
+    box-sizing: border-box;
+    margin: 0 auto 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.list-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 4px;
+
+}
+
+.list-item .mainItem {
+    background-color: var(--color4);
+    border-radius: 12px;
+    color: var(--color6);
+    padding: 4px 12px 4px 8px;
+    font-size: var(--font-small);
+    text-align: right;
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.list-item .mainItem:active a+a {
+    color: var(--color6);
+}
+
+.list-item .mainItem:active a+a:after {
+    content: ' شد';
+}
+
+.list-item a {
+    text-align: right;
+    flex-grow: 1;
+    font-family: shabnam;
+    font-size: var(--font-small);
+
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.list-item a+a {
+    flex-grow: 0;
+    width: auto;
+    color: var(--color7);
+    font-size: var(--font-small);
+}
+
+.checked::before {
+    content: '✅';
+    left: 8px;
+}
+
+
+.list-item .remove {
+    background-color: var(--color4);
+    border-radius: 12px;
+    color: red;
+    padding: 8px 12px 8px 12px;
+    font-size: calc(var(--font-small)/2);
+    font-size: var(--font-small);
+    text-align: right;
+    flex-grow: 0;
+
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.list-item .remove:active {
+    background-color: var(--color4-2);
+    color: var(--color6);
+}
+.topBar {
+    width: 100%;
+    height: auto;
+}
+
+.topBar > span {
+    width: fit-content;
+    height: auto;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+.topBar > span > button {
+    outline: none;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 12px;
+    font-size: var(--font-small);
+    color: var(--color6);
+    background-color: var(--color4);
+    padding: 4px 8px 4px 8px;
+    border-bottom: 2px solid var(--color3);
+    font-family: shabnam-thin;
+}
+
+.topBar > span > button:active {
+    color: var(--color7);
+    background-color: var(--color2);
+}
+
+.grab {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid var(--color2);
+    background-color: var(--color1);
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" class="dark-theme font-size-medium">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <title>تبدیل متن آموزشیار</title>
+</head>
+<body>
+    <div class="leftside">
+
+    </div>
+    <div class="main-content">
+
+        <div class="title" >تبدیل متن <b style="color: var(--color0-2);">آموزشیار</b></div>
+        <div class="topBar">
+            <span>
+                <button type="button" onclick="fontUp();">فونت ↑</button>
+                <button type="button" onclick="fontDown();">فونت ↓</button>
+                <button type="button" onclick="switchTheme();">تاریک/روشن</button>
+                <button type="button" onclick="location.href='https://antiqueocean.github.io/TabdilYaar';">بازگشت</button>
+
+            </span>
+        </div>
+
+        <input type="text" id="inputField"  placeholder="متن مورد نظر را وارد کنید" name="input" class="input-field"/>
+        <div class="arrow-down"><div class="arrow down"></div></div>
+        <button type="submit" class="result" onclick="copy('resultField');">
+            <a id="resultField"></a>
+            <a>کپی</a>
+        </button>
+        <div class="result-bottom-box">
+            <a id="saveStatus"></a>
+            <button onclick="addItem();">ذخیره +</button>
+        </div>
+        <div class="seperator"></div>
+        <div class="list-title">ذخیره شده:</div>
+    </div>
+        <div class="list-container" id="list"></div>
+        <div class="rightside">
+        
+        </div>
+
+
+</body>
+</html>
