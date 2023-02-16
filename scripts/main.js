@@ -1,6 +1,7 @@
 let inputField = document.getElementById('inputField');
 let resultField = document.getElementById('resultField');
 let inputContent = document.getElementById('visContent');
+let visibilityButton = document.getElementById('visButton');
 let docE =  document.documentElement;
 let saveStatus = document.getElementById('saveStatus');
 var lastTheme = localStorage.getItem('theme');
@@ -13,14 +14,17 @@ function updateStatus (input)
     saveStatus.innerHTML = input;
     statusTimer = 0;
 }
+
 function switchVisibility() {
     if (inputContent.style.display === 'none') {
         inputContent.style.display = 'flex';
         localStorage.setItem('inputVisibility', 'flex');
+        visibilityButton.innerHTML = "تمام‌صفحه";
     }
     else {
         inputContent.style.display = 'none';
         localStorage.setItem('inputVisibility', 'none');
+        visibilityButton.innerHTML = "نیم‌صفحه";
     }
 }
 
