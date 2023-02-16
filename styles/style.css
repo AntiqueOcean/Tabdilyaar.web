@@ -22,7 +22,7 @@ body {
 }
 .bottom {
     height: 80px;
-    width: 350px;
+    width: 100%;
     position: fixed;
     bottom: 0;
     margin: 0 auto 0 auto;
