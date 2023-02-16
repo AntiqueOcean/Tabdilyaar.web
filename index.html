@@ -25,7 +25,7 @@
     <div class="leftside">
         <div id="pos-article-display-79964"></div>
     </div>
-    <div class="main-content">
+    <div id="mainContent" class="main-content">
 
         <div class="title" >تبدیل متن <b style="color: var(--color0-2);">آموزشیار</b></div>
         <div class="topBar">
@@ -37,7 +37,7 @@
 
             </span>
         </div>
-
+        <div class="input-content" id="visContent">
         <input type="text" id="inputField"  placeholder="متن مورد نظر را وارد کنید" name="input" class="input-field"/>
         <div class="arrow-down"><div class="arrow down"></div></div>
         <button type="submit" class="result" onclick="copy('resultField');">
@@ -48,8 +48,11 @@
             <a id="saveStatus"></a>
             <button onclick="addItem();">ذخیره +</button>
         </div>
+        
         <div class="seperator"></div>
-        <div class="list-title">ذخیره شده:</div>
+    </div>
+        <div class="list-title"><a>ذخیره شده:</a><button onclick="switchVisibility();">تمام صفحه</button>
+        </div>
     </div>
         <div class="list-container" id="list"></div>
         <div class="rightside">

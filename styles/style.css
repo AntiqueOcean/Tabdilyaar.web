@@ -26,7 +26,6 @@ body {
     position: fixed;
     bottom: 0;
     margin: 0 auto 0 auto;
-    background-color: var(--color1);
     z-index: 1;
 }
 
@@ -46,7 +45,13 @@ body {
     top: 0;
     background-color: var(--color1);
 }
-
+.input-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
 .title {
     font-size: var(--font-huge);
     width: 100%;
@@ -203,13 +208,37 @@ body {
     background-color: var(--color4);
     width: 100%;
     height: auto;
-    padding: 12px 24px 12px 24px;
+    padding: 6px;
+    display: flex;
+    font-size: var(--font-small);
+    border-radius: 12px;
+    margin: 8px 0 16px 0;
+    box-sizing: border-box;
+    align-items: center;
+}
 
+.list-title  > a {
+    background-color: var(--color4);
+    flex-grow: 1;
+    height: auto;
     font-size: var(--font-small);
     border-radius: 12px;
     color: var(--color7);
     text-align: right;
-    margin: 8px 0 16px 0;
+
+}
+
+.list-title > button{
+    padding: 4px;
+    width: auto;
+    font-family: shabnam-thin;
+    border-radius: 8px;
+    background-color: var(--color1);
+    color: var(--color6);
+}
+
+.list-title > button:active{
+    background-color: var(--color3);
 }
 
 .list-container {

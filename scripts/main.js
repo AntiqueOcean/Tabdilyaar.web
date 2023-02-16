@@ -1,15 +1,27 @@
 let inputField = document.getElementById('inputField');
 let resultField = document.getElementById('resultField');
+let inputContent = document.getElementById('visContent');
 let docE =  document.documentElement;
 let saveStatus = document.getElementById('saveStatus');
 var lastTheme = localStorage.getItem('theme');
 var lastFontSize = localStorage.getItem('fontSize');
+var visibility = localStorage.getItem('inputVisibility');
 var statusTimer = 0;
 
 function updateStatus (input)
 {
     saveStatus.innerHTML = input;
     statusTimer = 0;
+}
+function switchVisibility() {
+    if (inputContent.style.display === 'none') {
+        inputContent.style.display = 'flex';
+        localStorage.setItem('inputVisibility', 'flex');
+    }
+    else {
+        inputContent.style.display = 'none';
+        localStorage.setItem('inputVisibility', 'none');
+    }
 }
 
 function support() {
@@ -130,7 +142,16 @@ function loop() {
 setInterval(loop, 250);
 
 ///at start
-{     
+{   
+    if (visibility != null)
+    {
+        if (visibility === 'none')
+            switchVisibility();   
+    } else {
+        localStorage.setItem('inputVisibility', 'flex');
+    }
+
+
     if (lastTheme != null)
     {
         if (lastTheme === 'dark')
@@ -138,7 +159,7 @@ setInterval(loop, 250);
     } else {
         localStorage.setItem('theme', 'light');
     }
-
+    
     if (lastFontSize != null)
     {
         docE.setAttribute('class', String(docE.getAttribute("class")).replace('medium', lastFontSize));
