@@ -147,6 +147,9 @@ setInterval(loop, 250);
 
 ///at start
 {   
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    inputField.value = urlParams.get('input');
     if (visibility != null)
     {
         if (visibility === 'none')
