@@ -111,7 +111,7 @@ function refreshList() {
         if (localStorage.key(i).indexOf("درس") != -1){
             tempstr = localStorage.getItem(localStorage.key(i));
             document.getElementById('list').innerHTML = document.getElementById('list').innerHTML +
-            "<div class=\"list-item\"> <button onclick=\"copy('item" + i + "');\" class=\"mainItem\"> <a id=\"item" + i + "\">" + tempstr + "</a> <a>کپی</a> </button>\
+            "<div class=\"list-item\"> <button onclick=\"copy('item" + i + "');\" class=\"mainItem\"><div class=\"original-title\">" + localStorage.key(i) + "</div> <a id=\"item" + i + "\">" + tempstr + "</a> <a>کپی</a> </button>\
             <button class=\"remove\" onclick=\"removeItem(\'" + localStorage.key(i) + "\');\">✘</button> </div>";  
         }
     }

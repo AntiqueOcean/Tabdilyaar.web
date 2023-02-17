@@ -13,6 +13,7 @@
     --color8: rgb(240 240 240 / 0); /*result shadow color*/
     --color9: RGB(0, 170, 80); /*save font color*/
     --color10: RGB(110, 24, 60); /*remove color*/
+    --color11: RGB(230, 230, 230); /*scrollbar color*/
 }
 
 .dark-theme {
@@ -30,6 +31,7 @@
     --color8: rgb(0 0 0 / 0.2); /*result shadow color*/
     --color9: RGB(0, 220, 200); /*save font color*/
     --color10: RGB(110, 24, 60); /*remove color*/
+    --color11: #3a3a3a; /*scrollbar color*/
 }
 
 .font-size-small {
