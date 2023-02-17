@@ -275,6 +275,7 @@ body {
     scrollbar-width: thin;
     scroll-behavior: smooth;
     padding-bottom: 60px;
+    border-radius: 12px;
 }
 
 .list-container::-webkit-scrollbar {
