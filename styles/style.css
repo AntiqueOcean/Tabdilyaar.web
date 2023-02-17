@@ -44,7 +44,19 @@ body {
     flex-flow: column;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color11) transparent;
+    overflow: auto;
+}
+.outer::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+    border-radius: 12px;
+}
+.outer::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: var(--color11);
+    border-radius: 12px;
 }
 
 .main-content {
