@@ -340,12 +340,16 @@ body {
     margin-right: auto;
     display: flex;
     gap: 8px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    display: flex;
 }
 
 .topBar > span > button {
     outline: none;
-    width: auto;
+    min-width: auto;
+    flex-grow: 1;
+    width: max-content;
     height: auto;
     text-decoration: none;
     text-align: center;
