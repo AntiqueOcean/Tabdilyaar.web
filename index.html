@@ -59,8 +59,10 @@
 
             </span>
         </div>
-        
+        <form class="input-form" onsubmit="addItem(); copy('resultField');">
         <input type="text" id="inputField"  placeholder="متن مورد نظر را وارد کنید" name="input" class="input-field"/>
+        <input type="submit" hidden>
+        </form>
         <div class="arrow-down"><div class="arrow down"></div></div>
         <button type="submit" class="result" onclick="copy('resultField');">
             <a id="resultField"></a>

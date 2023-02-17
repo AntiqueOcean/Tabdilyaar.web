@@ -15,6 +15,8 @@ body {
     z-index: 1;
 }
 
+
+
 .rightside {
     position: fixed;
     top: 10px;
@@ -77,6 +79,8 @@ body {
     flex-grow: 1;
 }
 
+
+
 .title {
     font-size: var(--font-huge);
     width: 100%;
@@ -84,6 +88,13 @@ body {
     margin-top: 32px;
     color: var(--color0);
     text-align: center;
+}
+
+.input-form {
+    margin: none;
+    padding: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .input-field {
@@ -95,8 +106,8 @@ body {
     height: auto;
     width: 100%;
     padding: 16px;
+    box-sizing: border-box;
     color: var(--color5);
-    box-sizing: content-box;
     font-family: shabnam;
     font-size: var(--font-small);
     transition-duration: 0.33s;
