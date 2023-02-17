@@ -64,7 +64,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding-top: 32px;
+    padding-top: 16px;
     flex-grow: 0;
     background-color: var(--color1);
 }
@@ -81,6 +81,7 @@ body {
     font-size: var(--font-huge);
     width: 100%;
     height: auto;
+    margin-top: 32px;
     color: var(--color0);
     text-align: center;
 }
