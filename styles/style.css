@@ -275,7 +275,7 @@ body {
     scrollbar-color: var(--color2) transparent;
     scrollbar-width: thin;
     scroll-behavior: smooth;
-    padding-bottom: 60px;
+    padding-bottom: calc(3em + 4px);
     border-radius: 12px;
 }
 
