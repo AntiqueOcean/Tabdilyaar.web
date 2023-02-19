@@ -26,15 +26,6 @@ body {
     z-index: 1;
 }
 
-.bottom {
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin: 0 auto 0 auto;
-    z-index: 1;
-}
-
 .outer {
     background-color: var(--color1);
     max-width: 600px;
@@ -422,4 +413,26 @@ body {
 .topBar > span > button:active {
     color: var(--color7);
     background-color: var(--color2);
+}
+
+.bottomBar {
+    position: fixed;
+    bottom: 0;
+    background-color: transparent;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    height: 50px;
+    z-index: 1;
+}
+.bottomBar button {
+    position: absolute;
+    top: 0px;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+    padding: 4px;
+    background-color: var(--color2);
+    color: var(--color3)
 }

@@ -8,6 +8,7 @@ var lastTheme = localStorage.getItem('theme');
 var lastFontSize = localStorage.getItem('fontSize');
 var visibility = localStorage.getItem('inputVisibility');
 var statusTimer = 0;
+var isItCliosed = false;
 
 function updateStatus (input)
 {
@@ -176,4 +177,11 @@ setInterval(loop, 250);
         localStorage.setItem("isTabdilyaarFirstTime", "false");
         alert (alertMessage);
     }
+}
+
+function closeIt()
+{
+    let it = document.getElementById('it');
+    if (it)
+        it.style.display = 'none';
 }
